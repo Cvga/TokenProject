@@ -7,7 +7,7 @@ import getWeb3 from "./getWeb3";
 import "./App.css";
 
 class App extends Component {
-  state = { loaded: false, kycAddress: "0x123" };
+  state = { loaded: false, kycAddress: "0x123", tokenSaleAddress: "" };
 
   componentDidMount = async () => {
     try {
@@ -37,7 +37,7 @@ class App extends Component {
 
         // Set web3, accounts, and contract to the state, and then proceed with an
         // example of interacting with the contract's methods.
-        this.setState({ loaded:true });
+        this.setState({ loaded:true, tokenSaleAddress: this.myTokenSale._address });
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -71,9 +71,11 @@ class App extends Component {
       <div className="App">
         <h1>Maya Token for testing purposes</h1>
         <p>Get your Maya tokens today!</p>
-        <h2>KYC Whitelisting</h2>
+        <h2>Enable your account to be Whitelisting</h2>
         Address to allow: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange} />
         <button type="button" onClick={this.handleKycSubmit}>Add Address to Whitelist and be Approved</button>
+        <h2>Buy Maya-Tokens</h2>
+        <p>Send Ether to this address: {this.state.tokenSaleAddress}</p>
       </div>
     );
   }
