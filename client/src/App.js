@@ -19,7 +19,7 @@ class App extends Component {
 
         // Get the contract instance.
         //this.networkId = await this.web3.eth.net.getId(); <<- this doesn't work with MetaMask anymore
-        this.networkId = await this.web3.eth.getChainId();      
+        this.networkId = await this.web3.eth.net.getId();      
 
         this.myToken = new this.web3.eth.Contract(
           MyToken.abi,
