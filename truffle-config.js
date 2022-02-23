@@ -18,8 +18,21 @@ networks: {
         return new HDWalletProvider(process.env.MNEMONIC, "http://127.0.0.1:7545", MetaMaskAccountIndex )
     },
     network_id: 5777
-    }
+    },
+    ropsten_infura: {
+        provider: function() {
+          return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/a730abaeb22a4683ac144bc07624ab6e", MetaMaskAccountIndex)
+        },
+        network_id: 3
+      },
+      goerli_infura: {
+        provider: function() {
+          return new HDWalletProvider(process.env.MNEMONIC, "https://goerli.infura.io/v3/a730abaeb22a4683ac144bc07624ab6e", MetaMaskAccountIndex)
+        },
+        network_id: 5
+      }
 },
+
 compilers: {    
     solc: {
     version: "^0.6.0"
