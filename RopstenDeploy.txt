@@ -1,0 +1,163 @@
+Migrations dry-run (simulation)
+===============================
+> Network name:    'ropsten_infura-fork'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+undefined
+   > block number:        12005796
+   > block timestamp:     1645589585
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.989619621768197599
+   > gas used:            160495 (0x272ef)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000401237501444455 ETH
+
+   -------------------------------------
+   > Total cost:     0.000401237501444455 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'MyToken'
+   -------------------
+undefined
+   > block number:        12005798
+   > block timestamp:     1645589588
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.986767001759069215
+   > gas used:            1095310 (0x10b68e)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00273827500876248 ETH
+
+
+   Replacing 'KycContract'
+   -----------------------
+undefined
+   > block number:        12005799
+   > block timestamp:     1645589589
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.985394319254676631
+   > gas used:            549073 (0x860d1)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001372682504392584 ETH
+
+
+   Replacing 'MyTokenSale'
+   -----------------------
+undefined
+   > block number:        12005800
+   > block timestamp:     1645589590
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.983405551748312575
+   > gas used:            795507 (0xc2373)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001988767506364056 ETH
+
+   -------------------------------------
+   > Total cost:     0.00609972501951912 ETH
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.006500962520963575 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten_infura'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x1842913b6c23ed207fc8ea687167dd7cad3cfbf24319505c0e3b31ce16701f36
+   ⠧ Blocks: 0            Seconds: 0undefined
+   ⠹ Blocks: 1            Seconds: 4undefined
+   > Blocks: 1            Seconds: 8
+   > contract address:    0x5013F6facD6186306A0C586DcF1cc5a7a00d25c9
+   > block number:        12005802
+   > block timestamp:     1645589595
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.989430464267516632
+   > gas used:            160495 (0x272ef)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000401237501444455 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000401237501444455 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'MyToken'
+   -------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x4d9960f8ff142d0a80e4dc3c1b62a03993ba5e88e08912b669f0a97d2e790cb0
+   ⠏ Blocks: 0            Seconds: 0undefined
+   ⠴ Blocks: 0            Seconds: 4undefined
+   ⠹ Blocks: 0            Seconds: 8undefined
+   ⠏ Blocks: 0            Seconds: 12undefined
+   ⠴ Blocks: 0            Seconds: 16undefined
+   ⠹ Blocks: 0            Seconds: 20undefined
+   ⠋ Blocks: 0            Seconds: 24undefined
+   ⠦ Blocks: 1            Seconds: 28undefined
+   ⠸ Blocks: 1            Seconds: 32undefined
+   ⠋ Blocks: 1            Seconds: 36undefined
+   ⠇ Blocks: 1            Seconds: 40undefined
+   ⠦ Blocks: 1            Seconds: 44undefined
+   ⠸ Blocks: 1            Seconds: 48undefined
+   ⠋ Blocks: 1            Seconds: 52undefined
+   ⠧ Blocks: 1            Seconds: 56undefined
+   ⠼ Blocks: 1            Seconds: 60undefined
+   > Blocks: 2            Seconds: 64
+   > contract address:    0x110dEf66d7f06145447DEBEac48654f31427cFC5
+   > block number:        12005805
+   > block timestamp:     1645589672
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.98657784425615189
+   > gas used:            1095310 (0x10b68e)
+   > gas price:           2.50000001 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0027382750109531 ETH
+
+
+   Replacing 'KycContract'
+   -----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0xebb1c7ab80f1bad9bd6ccd1f6e5fa9f2617bc78db68b9a5de50a00772ec8251c
+   ⠧ Blocks: 0            Seconds: 0undefined
+   ⠼ Blocks: 0            Seconds: 4undefined
+   ⠙ Blocks: 0            Seconds: 8undefined
+   ⠇ Blocks: 0            Seconds: 12undefined
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x5A1cf91024475899e46a12Db0B2AC9E37b2c2e10
+   > block number:        12005806
+   > block timestamp:     1645589708
+   > account:             0xC4ae4B99396722054C2EDA3802c959aa183Ebce7
+   > balance:             4.985205161750112087
+   > gas used:            549073 (0x860d1)
+   > gas price:           2.500000011 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001372682506039803 ETH
+Compiled with warnings.
